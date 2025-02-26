@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2107095655406549}
   - component: {fileID: 5990063588323195415}
   m_Layer: 0
-  m_Name: square'd box
+  m_Name: Mole Hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 6201130007846158023}
   - component: {fileID: 6872081850610697428}
   m_Layer: 0
-  m_Name: Square'd
+  m_Name: Mole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
