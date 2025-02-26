@@ -6,14 +6,19 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
 
-    public static List<GameObject> inventory;
+    public GameObject mole;
+    public float radius;
+    public float spawnrate = 3f;
 
-
-    public void AddToInventory(GameObject item)
+    private void Start()
     {
-        Debug.Log("Added To List");
-        inventory.Add(item);
+        SpawnMole();
     }
 
-
+    public void SpawnMole()
+    {
+        Vector2 randompos = Random.insideUnitSphere * radius;
+        Instantiate(mole, randompos, Quaternion.identity);
+        Invoke("SpawnMole", spawnrate);
+    }
 }
