@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public static List<GameObject> inventory;
+
+
+    public void AddToInventory(GameObject item)
     {
-        
+        Debug.Log("Added To List");
+        inventory.Add(item);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

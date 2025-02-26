@@ -13,6 +13,9 @@ public class Items : MonoBehaviour
 
     void OnMouseDown()
     {
-        Destroy(this.gameObject);    
+
+        //deletes the item from the scene.
+        Destroy(this.gameObject);
+
     }
 }

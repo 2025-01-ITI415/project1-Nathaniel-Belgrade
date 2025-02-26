@@ -5,20 +5,15 @@ using UnityEngine;
 
 public class CamMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public void turnLeft()
     {
-        
+        transform.Rotate(0, -45, 0);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    public void turn()
+    public void turnRight()
     {
         transform.Rotate(0, 45, 0);
     }
+
 }
