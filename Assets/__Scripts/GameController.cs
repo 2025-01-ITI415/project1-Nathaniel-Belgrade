@@ -17,7 +17,7 @@ public class GameController : MonoBehaviour
 
     public void SpawnMole()
     {
-        Vector2 randompos = Random.insideUnitSphere * radius;
+        Vector3 randompos = Random.insideUnitCircle * radius;
         Instantiate(mole, randompos, Quaternion.identity);
         Invoke("SpawnMole", spawnrate);
     }

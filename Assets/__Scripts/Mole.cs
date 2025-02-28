@@ -28,17 +28,30 @@ public class Mole : MonoBehaviour
         Debug.Log("bye bye!");
     }
 
-    void OnMouseDown()
-    {
-        if (inside)
-        {
+//    void OnMouseDown()
+  //  {
+    //    if (inside)
+      //  {
             //deletes the item from the scene.
-            Destroy(this.gameObject);
+        //    Destroy(this.gameObject);
             //Adds to total score
-            scoreCounter.score += 1000;
+          //  scoreCounter.score += 1000;
             //Sets inside as false again
-            inside = false;
-        }
+            //inside = false;
+            //Debug.Log("WHACKED");
+        //}
+
+//    }
+
+    private void OnMouseUpAsButton()
+    {
+        //deletes the item from the scene.
+        Destroy(this.gameObject);
+        //Adds to total score
+        scoreCounter.score += 1000;
+        //Sets inside as false again
+        inside = false;
+        Debug.Log("WHACKED");
 
     }
 }
